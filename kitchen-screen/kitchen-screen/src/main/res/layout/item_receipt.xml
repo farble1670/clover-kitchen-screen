@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_console"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    tools:background="@android:color/white"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:id="@+id/layout_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"
+      android:orientation="horizontal"
+      android:background="#D2D2D2">
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"/>
+
+    <CheckBox
+        android:id="@+id/check_read"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_horizontal"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Read?"/>
+  </LinearLayout>
+
+
+
+  <FrameLayout
+      android:layout_margin="16dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="wrap_content"
+      android:padding="1dp"
+      android:background="@android:color/black"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="8dp"
+        tools:src="@drawable/ic_launcher"
+        android:layout_gravity="center"
+        android:id="@+id/image_receipt"
+        android:layout_width="wrap_content"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"/>
+
+  </FrameLayout>
+</LinearLayout>
